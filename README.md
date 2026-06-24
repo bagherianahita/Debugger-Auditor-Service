@@ -52,6 +52,11 @@ npm install
 npm run dev
 ```
 
+| | URL |
+|---|-----|
+| **API** | http://localhost:4000 |
+| **Health check** | http://localhost:4000/health |
+
 Try audit with defaults:
 
 ```bash
