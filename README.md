@@ -44,12 +44,18 @@ Debugger-Auditor-Service/
 
 ---
 
-## Quick start
+## Quick start (employers — no API keys)
 
 ```bash
 cp .env.example .env
 npm install
-npm run dev          # hot reload
+npm run dev
+```
+
+Try audit with defaults:
+
+```bash
+curl -X POST http://localhost:4000/debug/audit -H "Content-Type: application/json" -d "{\"scoringInput\":{\"pathway\":\"experienced_renter\",\"monthlyIncome\":2500,\"rentAmount\":2100,\"missedPayments\":2},\"scoringResult\":{\"totalScore\":85,\"fixedScore\":80,\"pathway\":\"experienced_renter\",\"fixedBreakdown\":{\"concerns\":[]}}}"
 ```
 
 Production:
