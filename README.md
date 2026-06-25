@@ -1,4 +1,4 @@
-# Trust Debugger Auditor Service
+﻿# Trust Debugger Auditor Service
 
 **Scenario-based audit engine for trust-scoring logic** — compares `scoringInput` + `scoringResult` and returns structured pass/fail reports with contradiction detection.
 
@@ -44,7 +44,7 @@ Debugger-Auditor-Service/
 
 ---
 
-## Quick start (employers — no API keys)
+## Quick start
 
 ```bash
 cp .env.example .env
